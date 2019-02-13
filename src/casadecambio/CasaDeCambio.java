@@ -24,7 +24,7 @@ public class CasaDeCambio extends JFrame implements ActionListener{
     public static void main(String[] args) {
         
         CasaDeCambio casa = new CasaDeCambio();
-        casa.setSize(500, 200);
+        casa.setSize(500, 230);
         casa.setVisible(true);
         
     }
@@ -54,25 +54,38 @@ public class CasaDeCambio extends JFrame implements ActionListener{
         cuadro1.setVisible(true);
         cuadro1.setBounds(300,50,100,20);
         
-        lista.addItem("Dolares");
-        lista.addItem("Yenes");
-        lista.addItem("Euros");
-        lista.addItem("Libras");
-        lista.addItem("Bolivares");
-        lista.addItem("Rupias");
-        lista.addItem("Soles");
+        cuadro2.setVisible(true);
+        cuadro2.setBounds(50, 150, 400, 20);
+        
+        lista.addItem("Dolar");
+        lista.addItem("Yen");
+        lista.addItem("Euro");
+        lista.addItem("Libra");
+        lista.addItem("Bolivar");
+        lista.addItem("Rupia");
+        lista.addItem("Sol");
         lista.setVisible(true);
         lista.setBounds(150,100,100,20);
         
         boton.setVisible(true);
         boton.setBackground(Color.YELLOW);
         boton.setBounds(260, 100, 150, 20);
-        
+        boton.addActionListener(this);
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
+        if(e.getSource()==boton){
+        
+           CadenaDeResponsabilidad c = new CadenaDeResponsabilidad();
+           c.setMoneda(lista.getSelectedItem().toString());
+           c.setValor(Double.parseDouble(cuadro1.getText()));
+            
+           cuadro2.setText(c.pasoDeResponsabilidades());
+           
+        }
+        
     }
     
 }

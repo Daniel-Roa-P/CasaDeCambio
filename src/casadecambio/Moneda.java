@@ -1,15 +1,20 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 package casadecambio;
 
-/**
- *
- * @author danbr
- */
-public class Moneda {
+public abstract class Moneda {
+    
+    protected Moneda sucesor; 
+    protected double precio;
+    protected static String mensaje;
+    
+    public abstract String Convertir(String moneda,double valor);
+    
+    public Moneda getSuccessor() {
+        return sucesor;
+    }
+
+    public void setSucesor(Moneda sucesor) {
+        this.sucesor = sucesor;
+    }
     
 }

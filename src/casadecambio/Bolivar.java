@@ -1,15 +1,29 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 package casadecambio;
 
-/**
- *
- * @author danbr
- */
-public class Bolivar {
+public class Bolivar extends Moneda {
+
+    @Override
+    public String Convertir(String moneda, double valor) {
+        
+        System.out.println("responsablidad en clase Bolivar");
+        
+        if(moneda.equals("Bolivar") && valor>0){
+            
+            this.precio=valor/(0.95);
+            mensaje="Sus pesos equvalen a: "+String.format("%.2f", precio)+" Bolivares";
+            System.out.println("responsablidad realizada");
+            System.out.println("----------------------------------");
+            
+        } else {
+            
+            sucesor.Convertir(moneda, valor);
+            System.out.println("responsablidad pasada a Dolar");
+            
+        }
+        
+        return mensaje;
+                
+    }
     
 }

@@ -1,15 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 package casadecambio;
 
-/**
- *
- * @author danbr
- */
-public class MonedaPorDefecto {
+public class MonedaPorDefecto extends Moneda {
+
+    @Override
+    public String Convertir(String moneda, double valor) {
+        
+        mensaje = "La conversion no es valida";
+        
+        System.out.println("responsablidad realizada");
+        System.out.println("----------------------------------");
+        
+        return mensaje;
+        
+    }
     
 }
