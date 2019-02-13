@@ -20,7 +20,7 @@ public class CadenaDeResponsabilidad {
     
     public String pasoDeResponsabilidades(){
         
-        Moneda tiposDeMoneda[] = new Moneda[9];
+        Moneda tiposDeMoneda[] = new Moneda[8];
       
         tiposDeMoneda[7] = new MonedaPorDefecto();
         tiposDeMoneda[6] = new Yen();
