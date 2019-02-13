@@ -7,9 +7,6 @@ public class Dolar extends Moneda {
     public String Convertir(String moneda, double valor) {
         
         System.out.println("responsablidad en clase Dolar");
-        System.out.println(moneda);
-        System.out.println(valor);
-        
         
         if(moneda.equals("Dolar") && valor>0){
             
