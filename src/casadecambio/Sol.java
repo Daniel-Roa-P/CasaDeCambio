@@ -17,8 +17,8 @@ public class Sol extends Moneda {
             
         } else {
             
-            sucesor.Convertir(moneda, valor);
             System.out.println("responsablidad pasada a Yen");
+            sucesor.Convertir(moneda, valor);
             
         }
         

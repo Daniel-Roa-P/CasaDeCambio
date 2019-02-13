@@ -17,8 +17,9 @@ public class Libra extends Moneda {
             
         } else {
             
-            sucesor.Convertir(moneda, valor);
             System.out.println("responsablidad pasada a Rupia");
+            sucesor.Convertir(moneda, valor);
+            
             
         }
         

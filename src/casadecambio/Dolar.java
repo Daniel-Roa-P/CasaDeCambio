@@ -16,8 +16,8 @@ public class Dolar extends Moneda {
             System.out.println("----------------------------------");
         } else {
             
-            sucesor.Convertir(moneda, valor);
             System.out.println("responsablidad pasada a Euro");
+            sucesor.Convertir(moneda, valor);
             
         }
         

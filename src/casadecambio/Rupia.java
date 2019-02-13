@@ -17,8 +17,8 @@ public class Rupia extends Moneda {
             
         } else {
             
-            sucesor.Convertir(moneda, valor);
             System.out.println("responsablidad pasada a Sol");
+            sucesor.Convertir(moneda, valor);
             
         }
         

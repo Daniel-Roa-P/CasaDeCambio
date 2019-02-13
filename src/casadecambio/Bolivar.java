@@ -17,8 +17,8 @@ public class Bolivar extends Moneda {
             
         } else {
             
-            sucesor.Convertir(moneda, valor);
             System.out.println("responsablidad pasada a Dolar");
+            sucesor.Convertir(moneda, valor);
             
         }
         

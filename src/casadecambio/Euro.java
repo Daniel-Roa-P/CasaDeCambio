@@ -17,8 +17,8 @@ public class Euro extends Moneda {
             
         } else {
             
-            sucesor.Convertir(moneda, valor);
             System.out.println("responsablidad pasada a Libra");
+            sucesor.Convertir(moneda, valor);
             
         }
         
